@@ -1,4 +1,4 @@
-# X set combine
+# X set extracted
 
 train = read.table("train/X_train.txt", header = FALSE)
 
@@ -10,7 +10,7 @@ testData = as.matrix(test)
 
 
 
-# y set combine
+# y set extracted and combined
 
 
 train = read.table("train/y_train.txt", header = FALSE)
@@ -33,7 +33,7 @@ ytest = data
 X = rbind(trainData, testData)
 y = rbind(ytrain, ytest)
 
-# Subject set combine
+# Subject set extracted combined
 
 
 train = read.csv("train/subject_train.txt", header = FALSE)

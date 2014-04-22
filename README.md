@@ -17,6 +17,22 @@ For checking the data clearly, I suggest to rename the files with .csv as extens
 
 Steps followed in the R script
 ------------------------------
+R script is commented to describe which part is doing what. 
 
+* Firstly the X sets are extracted from test and train data set. 
+
+* Then y sets and next subject sets are extracted. The extracted sets are also combined into single R matrix object.
+
+* Matrices are converted into data.frame. Column names are also extracted from feature.txt file and inserted into data.frame object.
+
+* Descriptive activity names for y are inserted
+
+* Then only the measurements on the mean and standard deviation are extracted
+
+* Data is prepared and written for first output (tidydata.txt)
+
+* Second data set  with the average of each variable for each activity and each subject is produced (group_average.txt)
+
+* combined.txt is produced as described above
 
 
